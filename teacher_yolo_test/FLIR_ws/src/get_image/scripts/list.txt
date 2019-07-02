@@ -1,0 +1,9 @@
+/home/tony/Documents/FLIR_ws/src/get_image/scripts/Training_Data/0/0-1.jpg 182,176,336,292
+/home/tony/Documents/FLIR_ws/src/get_image/scripts/Training_Data/0/0-2.jpg 176,91,365,279
+/home/tony/Documents/FLIR_ws/src/get_image/scripts/Training_Data/0/0-1.jpg 218,149,333,244
+/home/tony/Documents/FLIR_ws/src/get_image/scripts/Training_Data/0/0-2.jpg 218,173,281,216
+/home/tony/Documents/FLIR_ws/src/get_image/scripts/Training_Data/0/1-1.jpg 191,132,302,214
+/home/tony/Documents/FLIR_ws/src/get_image/scripts/Training_Data/0/0-1.jpg 201,134,266,250
+/home/tony/Documents/FLIR_ws/src/get_image/scripts/Training_Data/0/0-2.jpg 252,178,308,235
+/home/tony/Documents/FLIR_ws/src/get_image/scripts/Training_Data/0/0-3.jpg 227,168,289,231
+/home/tony/Documents/FLIR_ws/src/get_image/scripts/Training_Data/0/0-1.jpg 207,150,311,300
