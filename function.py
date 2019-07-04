@@ -1,6 +1,7 @@
 # !/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
+#def = define
 
 
 def do_nothing():
@@ -76,6 +77,7 @@ def main():
    '''
    '''
    type_list = [None, True, False, 0, 0.0, (), [], {}, set()]
+
    for thing in type_list:
        print(str(thing) + ' is ', str(is_none(thing)))
    '''
@@ -99,7 +101,7 @@ def main():
    dict_a = {"wine":"chardonnay", "entree":"chicken", "dessert":"cake"}
    print(dict_a)
    printkwargs(wine="chardonnay", entree="chicken", dessert="cake")
-   printkwargs(**dict_a)
+   printkwargs(**dict_a)  
    '''
    '''
    print(print_if_true.__doc__)
@@ -107,7 +109,62 @@ def main():
    '''
    print(run_with_positional_args(sum_args, 1, 2, 3, 4))
    '''
-if __name__ == "__main__":
+
+
+
+
+
+
+
+if __name__ == "__main__":   #當作為模塊被呼叫時，輸入這兩行main()可避免也被執行
    main()
+
+#if 啟動＝true
+#if 外部呼叫 = false
+#有打有保障 
+
+
+'''
+========分隔線========
+'''
+#練習1：最大公因數
+
+def gcd(m, n):
+   if n == 0:
+       return m
+   else:
+       return gcd(n, m % n)
+
+print(gcd(20, 30))         #  10
+print(type(gcd))           # 顯示 <class 'function'>
+
+gcd2 = gcd
+print(gcd2(20, 30))        #  10
+print(id(gcd), id(gcd2))   # 兩個顯示的數字相同
+
+'''
+========分隔線========
+'''
+#練習2：由小排到大
+
+def selection(number):
+   # 找出排序中最小值
+   def min(m, j):
+       if j == len(number):
+           return m
+       elif number[j] < number[m]:
+           return min(j, j + 1)
+       else:
+           return min(m, j + 1)
+  
+   for i in range(0, len(number)):
+       m = min(i, i + 1)
+       if i != m:
+           number[i], number[m] = number[m], number[i]
+
+number = [1, 5, 2, 3, 9, 7]
+selection(number)
+print(number)     #  [1, 2, 3, 5, 7, 9]
+
 
 
