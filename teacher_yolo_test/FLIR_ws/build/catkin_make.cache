@@ -1,2 +1,2 @@
-get_image:pointgrey_camera_driver/image_exposure_msgs:pointgrey_camera_driver/pointgrey_camera_description:pointgrey_camera_driver/pointgrey_camera_driver:pointgrey_camera_driver/statistics_msgs:pointgrey_camera_driver/wfov_camera_msgs
--DCATKIN_DEVEL_PREFIX=/home/tony/Documents/FLIR_ws/devel -DCMAKE_INSTALL_PREFIX=/home/tony/Documents/FLIR_ws/install -G Unix Makefiles
+get_image
+-DCATKIN_DEVEL_PREFIX=/home/rachel/yolo3_auto_label-/teacher_yolo_test/FLIR_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rachel/yolo3_auto_label-/teacher_yolo_test/FLIR_ws/install -G Unix Makefiles

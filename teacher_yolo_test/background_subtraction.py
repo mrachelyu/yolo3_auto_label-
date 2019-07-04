@@ -1,7 +1,10 @@
+import sys
+sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
+
 import cv2
 import numpy as np
-ph1 = "/home/tony/Documents/data/img_3/1.jpg"
-ph2 = "/home/tony/Documents/data/img_3/5.jpg"
+ph1 = "/home/Documents/1.jpeg"
+ph2 = "/home/Documents/2.jpeg"
 
 threshod= 20 
 
@@ -42,3 +45,5 @@ cv2.imshow("img",img)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+
