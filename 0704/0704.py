@@ -62,7 +62,7 @@ def pic_sub(s1,s2,img,threshod):
 
 #背景消去_v2
 def pic_sub_v2(s1,s2,img,threshod):
-    _emptyimg = np.zeros(img.shape,np.uint8)
+    _emptyimg =(img.shape,np.uint8)
     _sub = np.uint8(np.abs(np.int32(s2) - np.int32(s1)))
     for x in range(0,_emptyimg.shape[0]):
         for y in range(0,_emptyimg.shape[1]):
@@ -150,7 +150,7 @@ n = 0
 c = 0
 k = 0
 
-testfolder = "%s/test_v3" % (datapath)
+testfolder = "%s/test_v3" % (datapath) # 
 if os.path.isdir(testfolder)==False:
     os.makedirs(testfolder)
 

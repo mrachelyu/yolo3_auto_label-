@@ -2,7 +2,7 @@
 import cv2
 import numpy as np  
  
-img = cv2.imread("/home/rachel/Documents/data/1.jpeg", 0)
+img = cv2.imread("/home/rachel/Documents/data/6.png", 0)
  
 img = cv2.GaussianBlur(img,(3,3),0)
 canny = cv2.Canny(img, 50, 150)
@@ -24,7 +24,7 @@ def CannyThreshold(lowThreshold):
     cv2.imshow('canny demo',dst)
  
 lowThreshold = 0
-max_lowThreshold = 100
+max_lowThreshold = 100/1 #100
 ratio = 3
 kernel_size = 3
  

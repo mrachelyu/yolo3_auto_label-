@@ -6,6 +6,8 @@ import argparse
 import numpy as np
 import os
 
+from pathlib import Path
+
 def pic_resize(img,i):
     _x, _y = img.shape[0:2]
     _x = int(_x/i)
@@ -14,6 +16,9 @@ def pic_resize(img,i):
 
 img = cv2.imread("yolo_photo_0.jpg")
 img = pic_resize(img,4)
+
+datapath = "./yolo_photo"
+print (datapath)
 
 cv2.imshow("img",img)
 
